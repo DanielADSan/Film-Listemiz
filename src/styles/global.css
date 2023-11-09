@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  background-color: #191919;
+  color: #F2F2F2;
+  min-height: 100vh;
+}
+
+button{
+  cursor: pointer ;
+}
+.button-container {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.button-container:focus {
+  outline: none;
+}
+
+/* Estilos para la imagen dentro del botón */
+.button-img {
+  width: 50px;
+  height: auto;
+}
+
+/* Estilos para la imagen cuando se hace hover sobre el botón */
+.button-container:hover .button-img {
+  transform: scale(1.1); /* Aumentar el tamaño al hacer hover */
+  transition: transform 0.2s; /* Agregar transición de 0.3 segundos */
+  
+}
+
+/* Cambiar el cursor a una mano al pasar sobre el botón */
+.button-container:hover {
+  cursor: pointer;
+}
